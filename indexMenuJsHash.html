@@ -1,0 +1,166 @@
+﻿<html>
+	<head>  	
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8" lang="pt-br">  	
+		<title>HUNG GAR KUEN e YANG TAI CHI CHUAN</title>  	
+		
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	   
+		<!--[if IE 6]>
+		<link rel="stylesheet" href="ie6.css" type="text/css" media="screen">
+		<![endif]--> 
+	
+	</script>
+	<script type="text/javascript"> 
+	// inclui o conteúdo dinamicamente, sem page refresh
+		$(document).ready(function(e){
+        $("a").click(function(e){
+		e.preventDefault();
+		var url = $(this).attr("href") ;
+		//alert(url);
+		// importante p/ não carregar a principal internamente
+		if(url != "#")
+        $("#esquerda").load(url); 
+		//window.history.pushState(urlfull,"", url);
+        });		
+	});
+	</script> 
+	<script type="text/javascript">	
+		window.onload = function(){		
+		$("#esquerda").load('home.htm');
+		}	
+	</script>
+ 
+	
+<!-- ESTILOS -->	
+	<link rel="stylesheet" href="css/menuMultinivel.css" type="text/css" />
+	<link rel="stylesheet" href="css/estilosConteudo.css" type="text/css" />
+	<style rel="stylesheet">
+		html { box-sizing :border-box;
+			background-color: black;
+		}
+		*, *:before, *:after {  inherit; }
+		.clear { clear: both; }
+		.tudo {
+			width: 100%;
+			max-width: 960;
+			margin: 0 auto;
+			background-color: black;
+			display:inline-flex;
+			height: 750px;
+		}
+		.home { background-color: black; }
+		.topo { width: 100%; }
+		.topo > img {
+			max-width: 960px;
+		}
+	
+		#direita {
+			width: 20%;
+			background-color: darkblue;
+			border: 3px solid blue;			
+		}
+		
+		#central {
+			height: 700px;
+			background:black;
+		}
+		
+		 #esquerda {
+			margin-left: 10px;
+			width: 79%;;
+			background-color: black;
+			height: auto;
+			float: left;
+			display: block;			
+		}
+		
+		#internalcontent iframe.html{
+			height: 700px;
+			color: white;
+			background-color: black;
+			padding: 5px;
+		}		
+	</style>	
+</head>
+	
+<body class="home">		
+	<header class="topo">
+		<img src="topo2.jpg" width='100%'  alt="Associação Hung Kuen do Brasil"/>
+<div style="justify-content:center; display:flex; margin-left:-10px;">
+<ul class="main-navigation">
+  <li><a href="#">Hung Gar</a>
+	<ul>
+      <li><a href="hg_historia.htm" >História</a></li>
+      <li><a href="#">Versões</a>
+        <ul>
+          <li><a href="#">Ling Nam</a></li>
+          <li><a href="hg_hasayfu.htm" >Ha Say Fu</a></li>
+        </ul>
+      </li>
+      <li><a href="#">Princípios</a>
+        <ul>
+			<li><a href="#" target="frmCentral">bases</a></li>
+			<li><a href="hg_animais.htm" >5 animais</a></li>
+			<li><a href="#" >12 pontes</a></li>
+			<li><a href="hg_elementos.htm" >5 elementos</a></li>
+        </ul>
+      </li>
+	  <li><a href="hg_formas.htm" >Técnicas</a>
+    </ul>
+  
+  </li>
+	
+  <li><a href="#">Tai Chi Chuan </a>
+    <ul>
+      <li><a href="tcc_historia.htm"  >História</a></li>
+	  <li><a href="tcc_familiaYang.htm" >Família Yang</a></li>
+      <li><a href="tcc_estilos.htm" target="frmCentral">Estilos</a>
+        <ul>
+          <li><a href="#" >Chen</a></li>
+          <li><a href="#" >Yang</a></li>
+          <li><a href="#" >Sun</a></li>
+        </ul>
+      </li>
+      <li><a href="#">Princípios</a>
+        <ul>
+          <li><a href="tcc_principios.htm" >10 essenciais</a></li>
+          <li><a href="#" >energia</a></li>
+        </ul>
+      </li>
+	  <li><a href="#">Técnicas</a>
+        <ul>
+          <li><a href="tcc_tecnicas.htm" target="frmCentral">forma</a></li>
+          <li><a href="#" >armas</a></li>
+		  <li><a href="#" >tui shou</a></li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li><a href="#">Aprendizado</a>
+    <ul>
+      <li><a href="hg_metodo.htm" target="frmCentral">Hung Gar</a></li>
+      <li><a href="#" >Tai Chi Chuan</a></li>
+      <li><a href="#" >Qigong</a></li>
+      <li><a href="#" >Geral</a></li>
+    </ul>
+  </li>
+  <li><a href="#">Contato</a>
+	<ul>
+      <li><a href="mailto:hgkungfu@gmail.com">email</a></li>
+      <li><a href="#" >biografia</a></li>
+    </ul>  
+  </li>
+</ul>
+	<div class="clear"></div>
+		
+	</header>
+
+</div>
+	<div class="tudo">
+	<div id="esquerda" >
+	
+	</div>
+
+	</div>
+</body>
+</html>

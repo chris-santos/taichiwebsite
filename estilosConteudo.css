@@ -1,0 +1,40 @@
+
+/* -----  Estilo das páginas internas --  */
+	img {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	
+	iframe.central {
+	background-color: black;
+}
+	#internalcontent {
+        height: 800px;
+        color: white;
+        background-color: black;
+        padding: 5px;
+    }
+	#internalcontent ul  {
+		display: -moz-groupbox;
+	}
+	#internalcontent ul  li {
+		background-color: black;
+	}
+	body {
+		background-color: black;
+	}
+	#internalcontent h2 {color: white;}
+	#internalcontent table {color: white;}
+	#innerpage {
+		margin-top: 5px;
+		width: 70%;
+		background-color: darkred;
+		color: white;
+		float: left;
+		display: inline;
+	}
+
+
+
+

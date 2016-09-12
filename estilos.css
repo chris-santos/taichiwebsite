@@ -1,0 +1,43 @@
+	
+body {
+	background-color: black;
+	color: white;
+}
+
+#footer  {  	
+	clear: both;  	
+	background: darkred;  
+	text-align: center;
+	color: yellow;
+
+	} 
+	/* pagina interna  */
+
+
+#innerpage {
+	margin-top: 5px;
+	width: 70%;
+	background-color: darkred;
+	float: left;
+	display: inline;
+}
+
+#sidebar {
+	float: left;
+	width: 25%;
+	background-color: darkblue;
+	
+}
+#internalcontent table, td, th {
+    color: antiquewhite;
+    padding: 20px;
+	border: 1px solid orange;
+}
+#internalcontent body {
+	color: white;
+	}
+.thtitle {
+	text-align:center;
+}
+
+

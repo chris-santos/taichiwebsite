@@ -1,0 +1,71 @@
+/*****************************MINI GALERIA DE FOTO********************/
+#slider {
+    width: 280px; /* important to be same as image width */
+    height: 225px; /* important to be same as image height */
+    position: relative; /* important */
+	overflow: hidden; /* important */
+}
+#sliderContent {
+    width: 300px; /* important to be same as image width or wider */
+    position: absolute;
+	top: -15px;
+	margin-left: 0px;
+}
+.sliderImage {
+    float: left;
+    position: relative;
+	
+}
+.sliderImage span {
+    position: absolute;
+	font: 10px/15px Arial, Helvetica, sans-serif;
+    padding: 10px 13px;
+    width: 300px;
+    background-color: #000;
+    filter: alpha(opacity=70);
+    -moz-opacity: 0.7;
+	-khtml-opacity: 0.7;
+    opacity: 0.7;
+    color: #fff;
+    display: none;
+}
+.clear {
+	clear: both;
+}
+.sliderImage span strong {
+    font-size: 14px;
+}
+.top {
+	top: 10px;
+	left: 0;
+}
+.bottom {
+	bottom: 0;
+    left: 0;
+}
+
+/* midia styles  */
+#conteudo-direita  {  	
+	float: right;  	
+	width: 200px;  	
+	margin-right: 150px;
+	padding: 10px;
+	} 
+
+#midia h3 {
+	color: white;
+	text-align: center;
+}
+#midia ul {
+	
+	margin: 1em 0;
+	padding: 0;
+	}
+
+#midia ul li {
+	color: yellow;
+	margin: 0 0 2em;
+	padding: 0;
+	list-style-type: none;
+	}
+	

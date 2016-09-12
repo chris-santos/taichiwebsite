@@ -1,0 +1,53 @@
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  background: red;
+  margin: 0px;
+}
+/* menu lista horizontal */
+ul li {
+  display: block;
+  position: relative;
+  float: left;
+  background: red;
+  height: 35px;
+}
+/* esconde os elementos da lista */
+li ul { 
+	display: none; 
+	height: 45px;
+}
+
+/* exibe os itens do menu */
+ul li a {
+  display: block;
+  padding: 7px 16px;
+  margin-right: 3px;
+  text-decoration: none;
+  white-space: nowrap;
+  color: #fff;
+}
+/* cor qdo aponta sobre */
+ul li a:hover { background: #2c3e50; }
+
+li:hover > ul {
+  display: block;
+  position: absolute;
+}
+
+li ul li a { padding: 5px; }
+
+li:hover li { float: none; }
+
+/* cor do menu expandido */
+li:hover a { background: darkred; }
+/* cor dos links internos */
+li:hover li a:hover { background: #2c3e50; }
+
+.main-navigation li ul li { border-top: 0; }
+/*  alinha o menu subnível à direita do nível superior  */
+ul ul ul {
+  left: 100%;
+  top: 0;
+}
